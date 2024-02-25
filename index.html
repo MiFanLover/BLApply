@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>去答题</title>
+        <meta http-equiv="refresh" content="0; URL='mio://web.vip.miui.com/page/info/mio/mio/testDetails?type=BL_BLOCK&id=-1'" />
+    </head>
+    <body>
+        <h1>去答题！</h1>
+        <p>本页面通过调用"小米社区"APP的合法功能，打开"小米社区"APP的BL解锁申请页面。</p>
+        <p>如果打开本页面没有反应，请确保您安装了"小米社区"APP，并且允许浏览器的"关联唤醒/启动其它应用"等权限。</p>
+        <button id="open_again">手动跳转</button>
+    </body>
+    <script>
+        function openMiBLApply(){
+            let url = 'mio://web.vip.miui.com/page/info/mio/mio/testDetails?type=BL_BLOCK&id=-1';
+            window.location.href = url;
+        }
+        window.onload = function(){
+            document.getElementById('open_again').onclick = openMiBLApply;
+        }
+    </script>
+</html>
